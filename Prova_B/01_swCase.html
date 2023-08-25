@@ -12,11 +12,13 @@
     */
 
     //Entrada
-
-    
+    const chá = prompt(`Informe qual o sabor do chá que você deseja:  C para Camomila, L para Capim-Limã e E para Erva-Doce.`);
     //Processamento
-
     
+    (chá = C) ? alert(`Chá de Camomila: R$ 4,50`)
+        : (chá = L) ? alert(`Chá de Capim-Limão: R$ 5,00`)
+            :(chá = E) ? alert(`Chá de Erva-Doce: R$ 4,00`)
+                : alert(`Opção de compra inválida para: ${}`)
     //Saída
 
     /*

@@ -13,14 +13,18 @@
     */
 
     //Entrada
-
-    
+    const bebida = Number(prompt(`Qual tipo você deseja? (Responda com: "RF" para Refrigerante, "SU" para Suco, "AG" para Água, "CF" para Café)`)).toFixed();
+    const quantidade = Number(prompt(`Qual quantidade você deseja comprar?`));
+     
     //Processamento
-
-    
-    //Saída
-
-
+    let valorTotal = bebida * quantidade;
+    let desconto = 10 / 100 * valorTotal;
+    (valorTotal >150.00) ? alert(`O valor total da sua bebida é de: R${valorTotal - desconto}`).toFixed(2).replace(",",",")
+        
+    (bebida =="RF") ? alert(`O custo será de: R${valorTotal}, ${desconto}`).toFixed(2).replace(",",",")
+    (bebida == "SU") ? alert(`O custo da bebida é de: R${valorTotal}, ${desconto}`).toFixed(2).replace(",",",")
+    (bebida == "AG") ? alert(`O custo total da bebida é de: R${valor}, ${desconto}`).toFixed(2).replace(",",",")
+    (bebida == "CF") ? alert(`O custo total da bebida é de: R${valorTotal}, ${desconto}`).toFixed(2).replace(",",",")
     /*
     Para testar:
     Entradas: Quantidade da bebida (número) e Tipo da Bebida (RF, SU, AG ou CF)

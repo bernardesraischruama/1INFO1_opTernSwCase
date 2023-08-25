@@ -10,11 +10,13 @@
     */
 
     //Entrada
-
+    const local = prompt(`Informe qual em que local gostaria de residir: P para Praia, F para Fazenda e U para Urbano.`);
     
     //Processamento
+    (local = P) ? alert(`litoral ${local}`).toFixer()
+        :(local = F) ? alert(`interior ${local}`)
+            :(local = U) ? alert(`Cidade ${local}`)
 
-    
     //Saída
 
     /*
